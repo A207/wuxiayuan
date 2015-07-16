@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    android:background="@drawable/yuanggg"
+   >
+
+    <TextView
+        android:text="体重指数计算器"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="#ffefffcb"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+      />
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+  <TableRow
+      android:layout_height="fill_parent"
+      android:layout_width="wrap_content"
+      android:gravity="center"
+      android:layout_marginBottom="30dp"
+      android:layout_marginTop="40dp">
+       <TextView
+        android:text="身高"
+        android:textSize="30sp"
+        android:textColor="#ffefffcb"
+        android:textStyle="bold"
+        />
+      <EditText
+          android:id="@+id/height"
+          android:hint="请输入身高"
+          android:singleLine="true"
+          android:textSize="30sp"
+
+          android:layout_gravity="center"/>
+    <TextView
+        android:text="cm"
+        android:textSize="30sp"
+        android:textColor="#ffefffcb"
+        android:textStyle="bold"
+        android:layout_gravity="right"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="50dp">
+
+        <TextView
+            android:text="体重"
+            android:textSize="30sp"
+            android:textColor="#ffefffcb"
+            android:textStyle="bold"/>
+
+      <EditText
+          android:id="@+id/weight"
+          android:hint="请输入体重"
+          android:singleLine="true"
+          android:textSize="30sp"
+          android:layout_gravity="center"></EditText>
+
+            <TextView
+                android:text="kg"
+                android:textSize="30sp"
+                android:textColor="#ffefffcb"
+                android:textStyle="bold"
+                android:layout_gravity="right"></TextView>
+
+   </TableRow>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="计算BMI"
+            android:textColor="#ffefffcb"
+            android:textSize="50sp"
+            android:id="@+id/btn"
+            android:background="@drawable/btn_selector"
+            android:layout_gravity="center"
+            ></Button>
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/suggest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" ></TextView>
+
+</TableLayout>
+
+    </LinearLayout>
